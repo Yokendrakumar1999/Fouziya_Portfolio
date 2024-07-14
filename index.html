@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://kit.fontawesome.com/08e94810ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Softwer Developer</p>
+                <h1>Hi, I'm <span>Fouziya</span> <br> from Tamil Nadu</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------------------About------------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Images/user.png" >
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Fouziya, a passionate Software Developer from Tamil Nadu. I specialize in creating dynamic and beautiful web applications. My journey in the tech world started with a deep interest in coding and has led me to develop a versatile skill set that spans front-end development, backend logic, and database management.</p>
+                <p>With a strong foundation in Computer Science, I hold an M.Sc. and B.Sc. in the field, which has equipped me with both theoretical and practical knowledge. I am committed to continuous learning and applying my skills to solve real-world problems.</p>
+                <p>Whether it's designing intuitive user interfaces, building robust backend systems, or analyzing data to drive business strategies, I bring a meticulous and enthusiastic approach to every project. Let's connect and create something amazing together!</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span> <br>UI/UX Development</li>
+                            <li><span>Backend Development</span> <br>Building Buisness logic development</li>
+                            <li><span>Database administration</span> <br>Database maintains, Manipulate, Stores data</li>
+                            <li><span>Data Analyst</span> <br> Provides Business Strategies to Client</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Data Analyst Trainee</span> <br>Underwent training on data analyst at data-driven company</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span> <br>M.Sc, Computer Science</li>
+                            <li><span>2021</span> <br>B.Sc, Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- --------------------------------------------------services------------------------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" >My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem iusto doloribus 
+                        blanditiis velit in pariatur qui praesentium? </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem iusto doloribus 
+                        blanditiis velit in pariatur qui praesentium? </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database managment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem iusto doloribus 
+                        blanditiis velit in pariatur qui praesentium? </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- -------------------------------contact---------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>fouziyafarheen.pt@gmail.com</p>
+                <p ><i class="fa-solid fa-square-phone-flip"></i>6382433282</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tajbhi.tajbhi.54?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/fouziya-t"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/fouziya_76?igsh=MTJxY2gzZmpqb2tudA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/khairunnisa-t?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <a href="Khairunnisa -T_Resume.pdf" download class="btn btn2">Download CV</a>
+               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Fouziya. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby5tv23sf0ttisXWSR7OjHJuKp3hZOz9t3nHJr7BbFFezAfJAiFhiLnLo0_8sPXhYq8/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
